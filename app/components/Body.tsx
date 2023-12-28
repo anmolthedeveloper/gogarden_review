@@ -77,7 +77,7 @@ export default function Body() {
           {/* image section */}
           <div className="flex items-center justify-center mt-10 pb-10">
             <div className="relative w-[270px] h-[450px]">
-              <Image src="/GoGarden.jpeg" alt="AmazonSS" layout="fill" />
+              <Image src="./GoGarden.jpeg" alt="AmazonSS" layout="fill" />
             </div>
           </div>
           {img != null && (
