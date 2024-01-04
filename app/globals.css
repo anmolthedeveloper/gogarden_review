@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* google fon import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-/* @media screen and (min-width: 450px) {
-    body {
-      background-color: lightgreen;
-    }
-    body>div>div{
-        margin-left: 0%;
-    }
-  } */
+p {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Inter", sans-serif;
+}

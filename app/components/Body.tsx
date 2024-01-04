@@ -8,21 +8,24 @@ export default function Body() {
   const url = searchParams.get("url");
   const img = searchParams.get("img");
 
+  //google font family
+
   return (
     // main body
     <div>
       {/* header section */}
-      <div className=" bg-blue-400 h-full lg:px-28 lg:pt-12 px-10 pt-5">
+      <div className="bg-white h-full lg:px-28 lg:pt-12 px-10 pt-5">
         <div className="lg:ml-60 lg:mr-60">
           <div className="flex items-center justify-center">
-            <p className="font-semibold text-white lg:text-2xl text-xl">
+            <p className="font-semibold text-black lg:text-2xl text-xl">
               Please read the sms below
             </p>
           </div>
           {/* content section */}
           <div className="pt-10">
-            <p className="text-white font-medium lg:text-lg text-justify">
-              Dear Valued Customer <br />
+            <p className="text-slate-500 font-medium lg:text-lg text-justify">
+              <span className="text-slate-500">Dear Valued Customer</span>{" "}
+              <br />
               We extend our sincere appreciation for choosing Go Garden on
               Amazon for your recent purchase of --ProductName--. Your trust in
               our products is highly valued.
@@ -45,20 +48,25 @@ export default function Body() {
               --ProductName--
               <br />
               <br />
-              Cashback Redemption Process:
+              <span className="text-black">Cashback Redemption Process:</span>
               <br />
               <br />
+              <span className="mr-2">&#8594;</span>
               Submit your review.
               <br />
+              <span className="mr-2">&#8594;</span>
               Take a screenshot of the review.
               <br />
-              Forword the screenshot to us via WhatsApp at:{" "}
+              <span className="mr-2">&#8594;</span>
+              Forword the screenshot to us via{" "}
+              <span className="ml-6 lg:ml-0">WhatsApp at: </span>
               <a
                 href="https://wa.me/+919109307929"
                 className="text-blue-800 hover:text-xl hover:underline"
               >
                 9109307929.
               </a>
+              <br />
               <br />
               This step is crucial for claiming your cashback amount. We
               appreciate your cooperation and eagerly anticipate hearing about
@@ -70,7 +78,7 @@ export default function Body() {
               services.
               <br />
               <br />
-              Best regards.
+              <span className="text-slate-600">Best regards.</span>
             </p>
             <p className="text-white font-medium text-lg"></p>
           </div>
